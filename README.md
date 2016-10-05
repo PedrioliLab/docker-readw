@@ -1,8 +1,21 @@
-# A dockerized version of ReAdW. The converter for ThermoFinnigan RAW files.
+# A dockerized version of ReAdW. The converter for Thermo Fisher Scientific RAW files.
+
+For more information on ReAdW see [this](https://github.com/PedrioliLab/ReAdW) repository.
+
 
 ## Building the image
 
-For more information on ReAdW see [this](https://github.com/PedrioliLab/ReAdW) repository.
+**IMPORTANT**
+This converter relies on DLLs from Thermo Fisher Scientific!
+Before you can build the image make sure to create a ReAdW_DLLs folder:
+
+    mkdir ReAdW_DLLs
+
+and to add the following DLLs to it (more information on how to obtain them can be found at the [main](https://github.com/PedrioliLab/ReAdW) ReAdW repository):
+- XRawfile2.dll
+- fileio.dll
+- fregistry.dll
+
 
 To build the container please use:
 
