@@ -22,8 +22,10 @@ To build the container please use:
     chmod 755 build.sh
     ./build.sh
 
-Once the building process starts you will be asked to confirm installation of a few Windows components required by wine. 
-Accept all installation requests. 
+Once the building process starts you will be asked to confirm installation of a few Windows components required by wine.
+
+Accept all installation requests.
+
 When prompted for a sudo password enter: 123
 
 At the end of the process you should have a new docker image called ppatrick/readw.
