@@ -6,5 +6,4 @@
 LOCAL_USER_ID=${USER_ID:-$(id -u)}
 LOCAL_GROUP_ID=${GROUP_ID:-$(id -g)}
 
-docker run -v $PWD:/data -e LOCAL_USER_ID=$LOCAL_USER_ID -e LOCAL_GROUP_ID=$LOCAL_GROUP_ID -it --rm ppatrick/readw wine /usr/local/bin/ReAdW.exe $@
-
+sudo docker run -v $PWD:/data -e LOCAL_USER_ID=$LOCAL_USER_ID -e LOCAL_GROUP_ID=$LOCAL_GROUP_ID -it --rm ppatrick/readw wine /usr/local/bin/ReAdW.exe $@
