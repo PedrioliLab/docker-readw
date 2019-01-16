@@ -7,7 +7,8 @@ LABEL Description="A dockerized version of ReAdW. The converter for ThermoFinnig
 ###############
 # ReAdW setup #
 ###############
-RUN apt-get -y install wget
+RUN apt-get update
+RUN apt-get -y install wget sudo
 
 RUN wget -O /usr/local/bin/winetricks 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks' \
     && chmod 755 /usr/local/bin/winetricks

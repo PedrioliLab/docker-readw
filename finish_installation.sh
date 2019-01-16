@@ -31,4 +31,3 @@ wineboot -s
 ## Setup up new entrypoint
 sudo cp /install/entrypoint.sh /usr/local/bin
 sudo chmod 755 /usr/local/bin/entrypoint.sh
-
